@@ -27,7 +27,7 @@ public class ShoppingCart {
     public double getTotalVegetarianPrice() {
         double totalPrice = 0;
         for (int i = 0; i < products.length; i++) {
-            if (products[i].getIsVegetarian()) {
+            if (products[i].isVegetarian()) {
                 totalPrice = totalPrice + products[i].getPrice() * products[i].getAmount();
             }
         }
